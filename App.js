@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Text, View } from 'react-native';
+import fetch from 'isomorphic-fetch';
 
 const beers = [
   {
@@ -74,7 +75,7 @@ export default App = () => {
       paddingRight: 24,
       justifyContent: 'center',
     }}>
-      { 
+      {
         (<View style={{ flex: 1, flexDirection: 'column', justifyContent: 'flex-start' }}>
           <Text style={{ fontSize: 18, color: 'green', textAlign: 'center' }}>Beers</Text>
 
